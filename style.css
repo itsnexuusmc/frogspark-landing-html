@@ -1,12 +1,156 @@
+.hero {
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.hero__content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.hero__title {
+  font-family: 'DINPro';
+  font-size: 75px;
+  color: white;
+}
+
+.hero__filter {
+  background: rgba(0, 0, 0, 0.8);
+  border: 5px solid #fff;
+  border-radius: 10px;
+  color: white;
+  padding: 6em 20px 20px;
+  /* padding top is the font size of h1, one line only */
+}
+
+.hero__unique {
+  background-color: white;
+  position: relative;
+}
+
+.hero__unique span {
+  font-size: 6em;
+  left: 0;
+  line-height: 100%;
+  padding-top: 25px;
+  /* padding + border of div */
+  position: absolute;
+  /* position at top left of #containter to sync bg */
+  text-align: center;
+  top: 0;
+  width: 100%;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.header {
+  padding: 1em 0;
+  width: 100%;
+}
+
+.header__content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__end-content {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.header__address {
+  font-family: 'DINPro';
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: #2D2D2D;
+  margin: 0;
+}
+
+.header__email {
+  font-family: 'DINPro';
+  letter-spacing: 2px;
+  font-size: 20px;
+  color: #00E7FF;
+  text-decoration: none;
+  margin: 0;
+  margin-left: 1em;
+}
+
 body {
   width: 100%;
   height: 100%;
   margin: 0;
-  background-color: red;
 }
 
 html {
   width: 100%;
   height: 100%;
   margin: 0;
+}
+
+.wrapper {
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.flex-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 100%;
+}
+
+@font-face {
+  font-family: 'DINPro';
+  src: url("../assets/fonts/DINPro-CondMedium.eot");
+  src: url("../assets/fonts/DINPro-CondMedium.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/DINPro-CondMedium.woff2") format("woff2"), url("../assets/fonts/DINPro-CondMedium.woff") format("woff"), url("../assets/fonts/DINPro-CondMedium.ttf") format("truetype"), url("../assets/fonts/DINPro-CondMedium.svg#DINPro-CondMedium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DINPro';
+  src: url("../assets/fonts/DINPro-CondBold.eot");
+  src: url("../assets/fonts/DINPro-CondBold.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/DINPro-CondBold.woff2") format("woff2"), url("../assets/fonts/DINPro-CondBold.woff") format("woff"), url("../assets/fonts/DINPro-CondBold.ttf") format("truetype"), url("../assets/fonts/DINPro-CondBold.svg#DINPro-CondBold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DINPro';
+  src: url("../assets/fonts/DINPro-CondLight.eot");
+  src: url("../assets/fonts/DINPro-CondLight.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/DINPro-CondLight.woff2") format("woff2"), url("../assets/fonts/DINPro-CondLight.woff") format("woff"), url("../assets/fonts/DINPro-CondLight.ttf") format("truetype"), url("../assets/fonts/DINPro-CondLight.svg#DINPro-CondLight") format("svg");
+  font-weight: 300;
+  font-style: normal;
 }

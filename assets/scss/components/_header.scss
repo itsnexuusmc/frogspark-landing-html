@@ -1,0 +1,37 @@
+.header {
+	padding: 1em 0;
+	width: 100%;
+
+	&__content {
+		width: 100%;
+		display: flex;
+	}
+
+	&__end-content {
+		width: 80%;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+	}
+
+	&__address {
+		font-family: 'DINPro';
+		font-weight: 500;
+		font-size: 16px;
+		letter-spacing: 2px;
+		color: $black;
+
+		margin: 0;
+	}
+
+	&__email {
+		font-family: 'DINPro';
+		letter-spacing: 2px;
+		font-size: 20px;
+		color: $blue;
+		text-decoration: none;
+
+		margin: 0;
+		margin-left: 1em;
+	}
+}
