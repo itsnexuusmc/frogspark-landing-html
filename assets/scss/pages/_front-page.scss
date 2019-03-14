@@ -3,7 +3,6 @@
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
-	height: 100vh;
 
 	&__content {
 		width: 100%;
@@ -15,34 +14,66 @@
 	}
 
 	&__title {
-		font-family: 'DINPro';
 		font-size: 75px;
 		color: white;
+		margin: 0;
+		margin-bottom: 0.5em;
+		text-transform: uppercase;
 	}
 
-	&__filter {
-		background: rgba(0,0,0,.8);
-    border: 5px solid #fff;
-    border-radius: 10px;
-    color: white;
-    padding: 6em 20px 20px; /* padding top is the font size of h1, one line only */
+	&__text {
+		span {
+			background-color: white;
+			color: black;
+			font-size: 75px;
+			font-weight: bold;
+			padding: 10px;
+			width: 50%;
+			text-align: center;
+			mix-blend-mode: screen;
+			text-transform: uppercase;
+
+		}
 	}
 
-	&__unique {
-		background-color: white;
-		position: relative;
+	&__description {
+		font-size: 20px;
+		letter-spacing: 2px;
+		color: white;
+		text-transform: uppercase;
+
+
+		&--blue {
+			color: $blue;
+		}
+
 
 		span {
-			font-size: 6em;
-		    left: 0;
-		    line-height: 100%;
-		    padding-top: 25px; /* padding + border of div */
-		    position: absolute; /* position at top left of #containter to sync bg */
-		    text-align: center;
-		    top: 0;
-		    width: 100%;
-		    -webkit-text-fill-color: transparent;
-		    -webkit-background-clip: text;
+			text-decoration: underline;
 		}
+	}
+
+	&__form {
+		width: 50%;
+		display: flex;
+		align-items: center;
+		position: relative;
+
+		i {
+			color: white;
+			position: absolute;
+			right: 0;
+		}
+	}
+
+	&__email {
+		background-color: unset;
+		color: white;
+		border: unset;
+		border-bottom: 1px solid white;
+		padding-bottom: 0.5em;
+		width: 100%;
+		letter-spacing: 1.8px;
+		text-transform: uppercase;
 	}
 }

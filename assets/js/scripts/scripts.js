@@ -1,12 +1,12 @@
 $(document).ready(function() {
 	// $('.fancy_title').lettering();
-// 	var heroHeight = $('.hero').outerHeight();
+	var windowHeight = $(window).outerHeight();
 
-// 	var headerHeight = $('.header').outerHeight();
+	var headerHeight = $('.header').outerHeight();
 
-// 	var actualHeight = heroHeight - headerHeight;
+	var actualHeight = windowHeight - headerHeight;
 
-// 	console.log(actualHeight);
+	console.log(actualHeight);
 
-// 	$('.hero').css('height', actualHeight + 'px');
+	$('.hero').css('height', actualHeight + 'px');
 });
