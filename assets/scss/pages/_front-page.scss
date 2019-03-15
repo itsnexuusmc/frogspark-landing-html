@@ -11,6 +11,10 @@
 		justify-content: center;
 		flex-direction: column;
 		position: relative;
+
+		@media (max-width: $tablet) {
+			text-align: center;
+		}
 	}
 
 	&__title {
@@ -19,6 +23,10 @@
 		margin: 0;
 		margin-bottom: 0.5em;
 		text-transform: uppercase;
+
+		@media (max-width: $tablet) {
+			font-size: 50px;
+		}
 	}
 
 	&__text {
@@ -33,6 +41,10 @@
 			mix-blend-mode: screen;
 			text-transform: uppercase;
 
+			@media (max-width: $tablet) {
+				font-size: 50px;
+			}
+
 		}
 	}
 
@@ -42,14 +54,17 @@
 		color: white;
 		text-transform: uppercase;
 
+		@media (max-width: $tablet) {
+		}
+
 
 		&--blue {
 			color: $blue;
 		}
 
-
 		span {
 			text-decoration: underline;
+			// border-bottom: 1px solid white;
 		}
 	}
 
