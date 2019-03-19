@@ -1,17 +1,34 @@
-$(document).ready(function() {
-	function calculateHeroHeight() {
-		var windowHeight = $(window).outerHeight();
+(function($, root, undefined) {
+	 $(function() {
+		$(document).ready(function() {
+			function pageTransition() {
+				$(document).ready(function() {
+		            setTimeout(function(){ 
+		                $('body').removeClass('do-page-transition');
+		            }, 100);
+		        });
+			}
 
-		var headerHeight = $('.header').outerHeight();
+			pageTransition();
+			
 
-		var actualHeight = windowHeight - headerHeight;
+			function calculateHeroHeight() {
+				var windowHeight = $(window).outerHeight();
 
-		$('.hero').css('height', actualHeight + 'px');
-	}
+				var headerHeight = $('.header').outerHeight();
 
-	calculateHeroHeight();
+				var actualHeight = windowHeight - headerHeight;
 
-	$(window).resize(function() {
-		calculateHeroHeight();
-	});
-});
+				$('.hero').css('height', actualHeight + 'px');
+			}
+
+			calculateHeroHeight();
+
+			$(window).resize(function() {
+				calculateHeroHeight();
+			});
+
+		});
+
+	})
+})(jQuery, this);

@@ -12,7 +12,14 @@
 	<!-- Import minified JavaScript file -->
 	<script src="assets/js/scripts.min.js"></script>
 </head>
-<body>
+<body class="do-page-transition">
+
+	<div class="page-transition">
+		<div class="bike-wrap">
+			<?php include ('loader.php'); ?>
+		</div>
+	</div>
+	
 	<header class="header">
 		<div class="wrapper">
 			<div class="flex-wrapper">
