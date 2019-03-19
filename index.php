@@ -1,6 +1,7 @@
 <?php include ('header.php'); ?>
 
 <div class="hero" style="background-image: url('assets/img/hero.jpg');">
+	<div class="filter"></div>
 	<div class="wrapper">
 		<div class="flex-wrapper">
 			<div class="hero__content">
