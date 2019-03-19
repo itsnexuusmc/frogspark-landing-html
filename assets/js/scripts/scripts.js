@@ -10,4 +10,8 @@ $(document).ready(function() {
 	}
 
 	calculateHeroHeight();
+
+	$(window).resize(function() {
+		calculateHeroHeight();
+	});
 });
