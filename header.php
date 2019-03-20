@@ -12,11 +12,13 @@
 	<!-- Import minified JavaScript file -->
 	<script src="assets/js/scripts.min.js"></script>
 </head>
+<!-- Add class to body for page transition -->
 <body class="do-page-transition">
 
 	<div class="page-transition">
 		<div class="bike-wrap">
-			<?php include ('loader.php'); ?>
+			<!-- Get the loader -->
+			<?php echo file_get_contents('./assets/img/loader.svg'); ?>
 		</div>
 	</div>
 	
@@ -25,7 +27,8 @@
 			<div class="flex-wrapper">
 				<div class="header__content">
 
-					<?php include ('logo.php'); ?>
+					<!-- Get the logo -->
+					<a href="/"><?php echo file_get_contents('./assets/img/logo.svg'); ?></a>
 
 					<div class="header__end-content">
 						<p class="header__address">Street Name, Nottingham, NG1 4GY</p>
